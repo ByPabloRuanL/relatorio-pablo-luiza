@@ -720,8 +720,9 @@ function toggleAlert(el){
 })();
 
 function checkPw(){
-  var pw = document.getElementById('pw-input').value;
-  if(pw === 'processo2026'){
+  var pw = document.getElementById('pw-input').value.trim().toLowerCase();
+  // aceita: pablo2026, processo2026, pablo (maiusculas/minusculas e espacos ignorados)
+  if(pw === 'pablo2026' || pw === 'processo2026' || pw === 'pablo'){
     sessionStorage.setItem('fin_auth','ok');
     document.getElementById('pw-overlay').style.display='none';
   } else {
