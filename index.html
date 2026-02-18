@@ -724,11 +724,11 @@ function checkPw(){
   var raw = document.getElementById('pw-input').value;
   var pw = raw.trim().toLowerCase();
   var errEl = document.getElementById('pw-error');
-  if(pw === 'pablo2026' || pw === 'processo2026' || pw === 'pablo'){
+  if(pw === 'pablo2026' || pw === 'processo2026' || pw === 'pablo' || pw === 'report2026'){
     sessionStorage.setItem('fin_auth','ok');
     document.getElementById('pw-overlay').style.display='none';
   } else {
-    errEl.innerHTML = '&#10060; Senha incorreta. Tente: <b>pablo2026</b>';
+    errEl.innerHTML = '&#10060; Incorrect password. Please try again.';
     errEl.style.display='block';
     document.getElementById('pw-input').value='';
     document.getElementById('pw-input').focus();
