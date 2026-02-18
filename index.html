@@ -536,7 +536,7 @@ footer{text-align:center;padding:28px 20px;font-size:.73rem;color:#374151;border
     <h2 data-i18n="luiza-assets-title">&#128200; Ativos Declarados da Luiza</h2>
     <div class="card-grid">
       <div class="stat-card purple"><div class="label" data-i18n="lbl-peoples-pension">The People's Pension</div><div class="value">&pound;218,81</div><div class="sub" data-i18n="sub-peoples-pension">Conta 8220172/PP. Empregador: Hippodrome Casino</div></div>
-      <div class="stat-card gray"><div class="label" data-i18n="stat-property">Im&#243;vel</div><div class="value">Nenhum</div><div class="sub" data-i18n="sub-luiza-property">Aluga studio @ &pound;1.300/m&#234;s (SW16 1QE)</div></div>
+      <div class="stat-card gray"><div class="label" data-i18n="stat-property">Im&#243;vel</div><div class="value" data-i18n="val-nenhum">Nenhum</div><div class="sub" data-i18n="sub-luiza-property">Aluga studio @ &pound;1.300/m&#234;s (SW16 1QE)</div></div>
     </div>
   </div>
 </div>
@@ -895,6 +895,40 @@ var rawTrans = {
     'Acordo informal': 'Informal agreement',
     'CMS oficial': 'Official CMS',
     'CMS oficial revisado': 'Official CMS revised',
+    // ── Hippodrome Casino row (Luiza income table)
+    '\u00a312.511 total': '\u00a312,511 total',
+    'Jul 2024\u2013Set 2025': 'Jul 2024\u2013Sep 2025',
+    // ── Extraman Temps Ltd row
+    '<b>Extraman Temps Ltd</b> (ag\u00eancia tempor\u00e1ria)': '<b>Extraman Temps Ltd</b> (temporary agency)',
+    'PAYE ref: 120/E4288. Empregador: 2 Hogarth Place, London SW5 0QT': 'PAYE ref: 120/E4288. Employer: 2 Hogarth Place, London SW5 0QT',
+    // ── Extraman Temps sub-rows
+    'Extraman Temps \u2014 Mai 2025': 'Extraman Temps \u2014 May 2025',
+    '\u00a3192,35 l\u00edquido': '\u00a3192.35 net',
+    '16h \u00d7 \u00a312,21 = \u00a3195,36 bruto': '16h \u00d7 \u00a312.21 = \u00a3195.36 gross',
+    '\u00a3389,80 l\u00edquido': '\u00a3389.80 net',
+    '30h \u00d7 \u00a313,85 = \u00a3415,50 bruto': '30h \u00d7 \u00a313.85 = \u00a3415.50 gross',
+    '\u00a3152,52 l\u00edquido': '\u00a3152.52 net',
+    'F\u00e9rias': 'Holiday Pay',
+    'Extraman Temps \u2014 Nov\u2013Dez 2025': 'Extraman Temps \u2014 Nov\u2013Dec 2025',
+    '\u00a397,68\u2013\u00a3282,04/semana': '\u00a397.68\u2013\u00a3282.04/week',
+    'Nov\u2013Dez 2025': 'Nov\u2013Dec 2025',
+    '8\u201324h semanais @ \u00a312,21\u2013\u00a312,50': '8\u201324h weekly @ \u00a312.21\u2013\u00a312.50',
+    // ── Universal Credit / Child Benefit / Magic Booking amounts
+    '\u00a32.108,50/m\u00eas': '\u00a32,108.50/month',
+    'Ago 2025': 'Aug 2025',
+    '\u00a3104,20/m\u00eas': '\u00a3104.20/month',
+    '\u00a3200\u2013\u00a3450/m\u00eas': '\u00a3200\u2013\u00a3450/month',
+    // ── Barclaycard table
+    '<b>Foxtons (aluguel)</b>': '<b>Foxtons (rent)</b>',
+    // ── Brazil clients
+    'Innova Comunica\u00e7\u00e3o (mai 2025)': 'Innova Comunica\u00e7\u00e3o (May 2025)',
+    // ── Liabilities table
+    '<b>Regiane de Campos Negreiros</b> (m\u00e3e \u2014 QualiBank CCB QUA0000993498)': '<b>Regiane de Campos Negreiros</b> (mother \u2014 QualiBank CCB QUA0000993498)',
+    '<b>Regiane de Campos Negreiros</b> (m\u00e3e \u2014 empr\u00e9stimo curso)': '<b>Regiane de Campos Negreiros</b> (mother \u2014 course loan)',
+    '<b>D\u00edvidas Fiscais MEI 2023</b> (CNPJ 28.108.245/0001-56 \u2014 SISPAR)': '<b>Tax Debts MEI 2023</b> (CNPJ 28.108.245/0001-56 \u2014 SISPAR)',
+    '<b>Parcelamento im\u00f3vel "Eder"</b>': '<b>Property Instalment "Eder"</b>',
+    // ── Pablo business accounts
+    '<b>Revolut Cartao Pounds GBP</b>': '<b>Revolut Card Pounds GBP</b>',
   }
 };
 
@@ -1074,7 +1108,8 @@ var T = {
     'sub-cms-phase3':'Apr 2025+ (7 months = &pound;1,286.04)',
     // ── People&#39;s Pension label
     'lbl-peoples-pension':'The People&#39;s Pension',
-    'footer-text':'Confidential &mdash; Legal Privilege | Financial Disclosure Analysis | Family Court &mdash; England &amp; Wales | Generated 18 February 2026'
+    'footer-text':'Confidential &mdash; Legal Privilege | Financial Disclosure Analysis | Family Court &mdash; England &amp; Wales | Generated 18 February 2026',
+    'val-nenhum':'None'
   },
   pt: {
     'pw-title':'Acesso Restrito',
@@ -1231,7 +1266,8 @@ var T = {
     'sub-cms-phase3':'Abr 2025+ (7 meses = &pound;1.286,04)',
     // ── People&#39;s Pension label
     'lbl-peoples-pension':'The People&#39;s Pension',
-        'footer-text':'Confidencial &mdash; Legal Privilege | An&#225;lise de Divulga&#231;&#227;o Financeira | Family Court &mdash; England &amp; Wales | Gerado em 18 de Fevereiro de 2026'
+        'footer-text':'Confidencial &mdash; Legal Privilege | An&#225;lise de Divulga&#231;&#227;o Financeira | Family Court &mdash; England &amp; Wales | Gerado em 18 de Fevereiro de 2026',
+    'val-nenhum':'Nenhum'
   }
 };
 
@@ -1244,10 +1280,61 @@ function toggleLang(){
   document.getElementById('lang-btn').innerHTML = (currentLang==='pt') ? '&#127760; EN' : '&#127760; PT';
   document.documentElement.lang = (currentLang==='pt') ? 'pt-BR' : 'en';
   applyRawTranslations(currentLang);
+  updateCharts(currentLang);
 }
 
 // ===== CHARTS =====
 var C = { blue:'#4f8ef7', green:'#22c55e', red:'#ef4444', yellow:'#f59e0b', purple:'#a78bfa', grid:'#2a2d3e', text:'#94a3b8' };
+var charts = {};
+var chartLabels = {
+  months12: {
+    pt: ['Nov24','Dez24','Jan25','Fev25','Mar25','Abr25','Mai25','Jun25','Jul25','Ago25','Set25','Out25'],
+    en: ['Nov24','Dec24','Jan25','Feb25','Mar25','Apr25','May25','Jun25','Jul25','Aug25','Sep25','Oct25']
+  },
+  months16: {
+    pt: ['Jul24','Ago24','Set24','Out24','Nov24','Dez24','Jan25','Fev25','Mar25','Abr25','Mai25','Jun25','Jul25','Ago25','Set25','Out25'],
+    en: ['Jul24','Aug24','Sep24','Oct24','Nov24','Dec24','Jan25','Feb25','Mar25','Apr25','May25','Jun25','Jul25','Aug25','Sep25','Oct25']
+  },
+  airbnb: {
+    pt: ['Mai 25','Jun 25','Jul 25','Ago 25','Set 25','Out 25'],
+    en: ['May 25','Jun 25','Jul 25','Aug 25','Sep 25','Oct 25']
+  },
+  barc: {
+    pt: ['Facebook Ads','Foxtons (aluguel)','Viagens/voos','Restaurantes/supermercados','Outros'],
+    en: ['Facebook Ads','Foxtons (rent)','Travel/flights','Restaurants/supermarkets','Others']
+  },
+  barcSplit: {
+    pt: ['Empresarial','Pessoal'],
+    en: ['Business','Personal']
+  },
+  luizaExpCats: {
+    pt: ['Aluguel','Council Tax+Utils','Childcare/escola','Alimenta\u00e7\u00e3o','Outros'],
+    en: ['Rent','Council Tax+Utils','Childcare/school','Food','Others']
+  },
+  luizaExpSeries: {
+    pt: ['Atual','Futuro'],
+    en: ['Current','Future']
+  },
+  cmsPhases: {
+    pt: ['Fase 1 Informal (Jul\u2013Dez 2024)','Fase 2 CMS (Jan\u2013Mar 2025)','Fase 3 CMS Revisado (Abr\u2013Out 2025)'],
+    en: ['Phase 1 Informal (Jul\u2013Dec 2024)','Phase 2 CMS (Jan\u2013Mar 2025)','Phase 3 CMS Revised (Apr\u2013Oct 2025)']
+  }
+};
+function updateCharts(lang) {
+  if(charts.ireland){ charts.ireland.data.labels = chartLabels.months12[lang]; charts.ireland.update(); }
+  if(charts.airbnb){ charts.airbnb.data.labels = chartLabels.airbnb[lang]; charts.airbnb.update(); }
+  if(charts.cmsMini){ charts.cmsMini.data.labels = chartLabels.months16[lang]; charts.cmsMini.update(); }
+  if(charts.barc){ charts.barc.data.labels = chartLabels.barc[lang]; charts.barc.update(); }
+  if(charts.barcSplit){ charts.barcSplit.data.labels = chartLabels.barcSplit[lang]; charts.barcSplit.update(); }
+  if(charts.luizaExp){
+    charts.luizaExp.data.labels = chartLabels.luizaExpCats[lang];
+    charts.luizaExp.data.datasets[0].label = chartLabels.luizaExpSeries[lang][0];
+    charts.luizaExp.data.datasets[1].label = chartLabels.luizaExpSeries[lang][1];
+    charts.luizaExp.update();
+  }
+  if(charts.cmsFull){ charts.cmsFull.data.labels = chartLabels.months16[lang]; charts.cmsFull.update(); }
+  if(charts.cmsPhases){ charts.cmsPhases.data.labels = chartLabels.cmsPhases[lang]; charts.cmsPhases.update(); }
+}
 var defOpts = {
   responsive:true, maintainAspectRatio:true,
   plugins:{ legend:{ labels:{ color:C.text, font:{size:11} } } },
@@ -1272,7 +1359,7 @@ new Chart(document.getElementById('chartCorpRevenue'), {
 });
 
 // Ireland monthly revenue
-new Chart(document.getElementById('chartIreland'), {
+charts.ireland = new Chart(document.getElementById('chartIreland'), {
   type:'bar', data:{
     labels:['Nov24','Dez24','Jan25','Fev25','Mar25','Abr25','Mai25','Jun25','Jul25','Ago25','Set25','Out25'],
     datasets:[{ label:'Receita EUR', data:[28000,21000,32000,28000,35000,30000,34000,29000,27000,25000,22000,20000],
@@ -1281,7 +1368,7 @@ new Chart(document.getElementById('chartIreland'), {
 });
 
 // Airbnb monthly
-new Chart(document.getElementById('chartAirbnb'), {
+charts.airbnb = new Chart(document.getElementById('chartAirbnb'), {
   type:'bar', data:{
     labels:['Mai 25','Jun 25','Jul 25','Ago 25','Set 25','Out 25'],
     datasets:[{ label:'GBP', data:[152,350,820,1144,0.01,686.84], backgroundColor:C.green, borderRadius:4 }]
@@ -1289,7 +1376,7 @@ new Chart(document.getElementById('chartAirbnb'), {
 });
 
 // CMS mini
-new Chart(document.getElementById('chartCmsMini'), {
+charts.cmsMini = new Chart(document.getElementById('chartCmsMini'), {
   type:'bar', data:{
     labels:['Jul24','Ago24','Set24','Out24','Nov24','Dez24','Jan25','Fev25','Mar25','Abr25','Mai25','Jun25','Jul25','Ago25','Set25','Out25'],
     datasets:[{ label:'CMS GBP', data:[500,500,500,500,500,500,131.4,131.4,131.4,183.72,183.72,183.72,183.72,183.72,183.72,183.72],
@@ -1298,7 +1385,7 @@ new Chart(document.getElementById('chartCmsMini'), {
 });
 
 // Barclaycard breakdown
-new Chart(document.getElementById('chartBarclaycard'), {
+charts.barc = new Chart(document.getElementById('chartBarclaycard'), {
   type:'doughnut', data:{
     labels:['Facebook Ads','Foxtons (aluguel)','Viagens/voos','Restaurantes/supermercados','Outros'],
     datasets:[{ data:[15600,8900,3000,4000,6642], backgroundColor:[C.yellow,'#3b82f6','#8b5cf6',C.green,'#64748b'], borderColor:'#1a1d2e', borderWidth:2 }]
@@ -1306,7 +1393,7 @@ new Chart(document.getElementById('chartBarclaycard'), {
 });
 
 // Barclaycard personal vs business
-new Chart(document.getElementById('chartBarcPersVsBus'), {
+charts.barcSplit = new Chart(document.getElementById('chartBarcPersVsBus'), {
   type:'pie', data:{
     labels:['Empresarial','Pessoal'],
     datasets:[{ data:[18000,20142], backgroundColor:[C.yellow,C.blue], borderColor:'#1a1d2e', borderWidth:2 }]
@@ -1322,7 +1409,7 @@ new Chart(document.getElementById('chartLuizaIncome'), {
 });
 
 // Luiza expenditure
-new Chart(document.getElementById('chartLuizaExp'), {
+charts.luizaExp = new Chart(document.getElementById('chartLuizaExp'), {
   type:'bar', data:{
     labels:['Aluguel','Council Tax+Utils','Childcare/escola','Alimenta\u00e7\u00e3o','Outros'],
     datasets:[
@@ -1333,7 +1420,7 @@ new Chart(document.getElementById('chartLuizaExp'), {
 });
 
 // CMS full history
-new Chart(document.getElementById('chartCMS'), {
+charts.cmsFull = new Chart(document.getElementById('chartCMS'), {
   type:'bar', data:{
     labels:['Jul24','Ago24','Set24','Out24','Nov24','Dez24','Jan25','Fev25','Mar25','Abr25','Mai25','Jun25','Jul25','Ago25','Set25','Out25'],
     datasets:[{ label:'CMS (GBP)', data:[500,500,500,500,500,500,131.4,131.4,131.4,183.72,183.72,183.72,183.72,183.72,183.72,183.72],
@@ -1342,7 +1429,7 @@ new Chart(document.getElementById('chartCMS'), {
 });
 
 // CMS phases
-new Chart(document.getElementById('chartCMSPhases'), {
+charts.cmsPhases = new Chart(document.getElementById('chartCMSPhases'), {
   type:'doughnut', data:{
     labels:['Fase 1 Informal (Jul\u2013Dez 2024)','Fase 2 CMS (Jan\u2013Mar 2025)','Fase 3 CMS Revisado (Abr\u2013Out 2025)'],
     datasets:[{ data:[3000,394.20,1286.04], backgroundColor:[C.yellow,C.green,'#16a34a'], borderColor:'#1a1d2e', borderWidth:2 }]
