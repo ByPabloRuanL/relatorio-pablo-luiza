@@ -94,6 +94,7 @@ footer{text-align:center;padding:28px 20px;font-size:.73rem;color:#374151;border
     <div id="pw-error"><span data-i18n="pw-error-msg">&#10060; Senha incorreta. Tente novamente.</span></div>
     <button id="pw-submit" onclick="checkPw()">Entrar / Enter</button>
     <p id="pw-hint" data-i18n="pw-hint">Processo de Div&#243;rcio &mdash; Documento Confidencial</p>
+    <p style="font-size:.65rem;color:#4b5563;margin-top:12px">v2026.02.18-c</p>
   </div>
 </div>
 
@@ -720,13 +721,15 @@ function toggleAlert(el){
 })();
 
 function checkPw(){
-  var pw = document.getElementById('pw-input').value.trim().toLowerCase();
-  // aceita: pablo2026, processo2026, pablo (maiusculas/minusculas e espacos ignorados)
+  var raw = document.getElementById('pw-input').value;
+  var pw = raw.trim().toLowerCase();
+  var errEl = document.getElementById('pw-error');
   if(pw === 'pablo2026' || pw === 'processo2026' || pw === 'pablo'){
     sessionStorage.setItem('fin_auth','ok');
     document.getElementById('pw-overlay').style.display='none';
   } else {
-    document.getElementById('pw-error').style.display='block';
+    errEl.innerHTML = '&#10060; Senha incorreta. Tente: <b>pablo2026</b>';
+    errEl.style.display='block';
     document.getElementById('pw-input').value='';
     document.getElementById('pw-input').focus();
   }
