@@ -137,7 +137,7 @@ footer{text-align:center;padding:28px 20px;font-size:.73rem;color:#374151;border
     <div class="stat-card blue">
       <div class="label" data-i18n="stat1-label">Pablo &mdash; Renda Pessoal 2024</div>
       <div class="value">&pound;54.000</div>
-      <div class="sub">PAYE &pound;18.384 + Aut&ocirc;nomo &pound;35.616</div>
+      <div class="sub" data-i18n="sub-resumo-pablo-personal">PAYE &pound;18.384 + Aut&ocirc;nomo &pound;35.616</div>
     </div>
     <div class="stat-card blue">
       <div class="label" data-i18n="stat2-label">Pablo &mdash; Receita Empresa Irlanda</div>
@@ -157,12 +157,12 @@ footer{text-align:center;padding:28px 20px;font-size:.73rem;color:#374151;border
     <div class="stat-card red">
       <div class="label" data-i18n="stat5-label">Luiza &mdash; Passivos Declarados (UK)</div>
       <div class="value">&pound;22.556</div>
-      <div class="sub">Empr&eacute;stimo Mauro &pound;21.394 + British Gas &pound;1.162</div>
+      <div class="sub" data-i18n="sub-luiza-liab">Empr&eacute;stimo Mauro &pound;21.394 + British Gas &pound;1.162</div>
     </div>
     <div class="stat-card green">
       <div class="label" data-i18n="stat6-label">CMS Pago &mdash; Total Acumulado</div>
       <div class="value">&pound;~3.650</div>
-      <div class="sub">Jul 2024 &ndash; Out 2025 (Noah)</div>
+      <div class="sub" data-i18n="sub-cms-total-period">Jul 2024 &ndash; Out 2025 (Noah)</div>
     </div>
   </div>
 
@@ -180,13 +180,13 @@ footer{text-align:center;padding:28px 20px;font-size:.73rem;color:#374151;border
   <div class="card">
     <h2 data-i18n="flow-title">&#128200; Fluxo de Dinheiro do Pablo</h2>
     <div class="flow-box">
-      <div class="flow-step"><span class="flow-entity">Clientes Italianos</span><span class="flow-arrow">&#8594;</span><span class="flow-entity">Archprime Ltd UK (EUR)</span><span class="flow-amount">€70.080 (ago&ndash;out 2025)</span></div>
-      <div class="flow-step"><span class="flow-entity">Clientes Italianos</span><span class="flow-arrow">&#8594;</span><span class="flow-entity">Concept Marketing Solutions Ltd Irlanda</span><span class="flow-amount">€351.701 anual</span></div>
-      <div class="flow-step"><span style="width:24px"></span><span class="flow-arrow">&#8594;</span><span class="flow-entity">Revolut Personal GBP (conversor EUR&#8594;GBP)</span><span class="flow-amount">£47.918 entrada</span></div>
-      <div class="flow-step"><span style="width:24px"></span><span class="flow-arrow">&#8594;</span><span class="flow-entity">Barclaycard UK</span><span class="flow-amount">£38.142 (jun&ndash;out 2025)</span></div>
-      <div class="flow-step"><span class="flow-entity">Archprime Ltd</span><span class="flow-arrow">&#8594;</span><span class="flow-entity">Pablo Pessoalmente</span><span class="flow-amount">€3.500&ndash;€3.656/m&ecirc;s</span></div>
-      <div class="flow-step"><span class="flow-entity">CMSL Irlanda</span><span class="flow-arrow">&#8594;</span><span class="flow-entity">Remessa Online &#8594; Nubank Pessoal BR</span><span class="flow-arrow">&#8594;</span><span class="flow-entity">Concept LTDA Brasil (folha)</span></div>
-      <div class="flow-step"><span class="flow-entity">Airbnb</span><span class="flow-arrow">&#8594;</span><span class="flow-entity">Citibank Irlanda &#8594; Lloyds UK</span><span class="flow-amount">£152&ndash;£1.144/m&ecirc;s</span></div>
+      <div class="flow-step"><span class="flow-entity" data-i18n="fl-ent-it-clients">Clientes Italianos</span><span class="flow-arrow">&#8594;</span><span class="flow-entity">Archprime Ltd UK (EUR)</span><span class="flow-amount" data-i18n="fl-amt-archprime">€70.080 (ago&ndash;out 2025)</span></div>
+      <div class="flow-step"><span class="flow-entity" data-i18n="fl-ent-it-clients">Clientes Italianos</span><span class="flow-arrow">&#8594;</span><span class="flow-entity">Concept Marketing Solutions Ltd Irlanda</span><span class="flow-amount" data-i18n="fl-amt-cmsl-annual">€351.701 anual</span></div>
+      <div class="flow-step"><span style="width:24px"></span><span class="flow-arrow">&#8594;</span><span class="flow-entity" data-i18n="fl-ent-revolut-converter">Revolut Personal GBP (conversor EUR&#8594;GBP)</span><span class="flow-amount" data-i18n="fl-amt-revolut-gbp">£47.918 entrada</span></div>
+      <div class="flow-step"><span style="width:24px"></span><span class="flow-arrow">&#8594;</span><span class="flow-entity">Barclaycard UK</span><span class="flow-amount" data-i18n="fl-amt-barclaycard">£38.142 (jun&ndash;out 2025)</span></div>
+      <div class="flow-step"><span class="flow-entity">Archprime Ltd</span><span class="flow-arrow">&#8594;</span><span class="flow-entity" data-i18n="fl-ent-pablo-pers">Pablo Pessoalmente</span><span class="flow-amount" data-i18n="fl-amt-pablo-salary">€3.500&ndash;€3.656/m&ecirc;s</span></div>
+      <div class="flow-step"><span class="flow-entity" data-i18n="fl-ent-cmsl-irl">CMSL Irlanda</span><span class="flow-arrow">&#8594;</span><span class="flow-entity">Remessa Online &#8594; Nubank Pessoal BR</span><span class="flow-arrow">&#8594;</span><span class="flow-entity" data-i18n="fl-ent-concept-payroll">Concept LTDA Brasil (folha)</span></div>
+      <div class="flow-step"><span class="flow-entity">Airbnb</span><span class="flow-arrow">&#8594;</span><span class="flow-entity" data-i18n="fl-ent-airbnb-chain">Citibank Irlanda &#8594; Lloyds UK</span><span class="flow-amount" data-i18n="fl-amt-airbnb-monthly">£152&ndash;£1.144/m&ecirc;s</span></div>
     </div>
   </div>
 
@@ -210,9 +210,9 @@ footer{text-align:center;padding:28px 20px;font-size:.73rem;color:#374151;border
   <div class="card">
     <h2 data-i18n="pablo-income-title">&#128188; Renda Pessoal do Pablo &mdash; Form E (Declarada)</h2>
     <div class="card-grid">
-      <div class="stat-card blue"><div class="label" data-i18n="lbl-paye">PAYE 2024</div><div class="value">&pound;18.384</div><div class="sub">Emprego formal UK</div></div>
+      <div class="stat-card blue"><div class="label" data-i18n="lbl-paye">PAYE 2024</div><div class="value">&pound;18.384</div><div class="sub" data-i18n="sub-paye-formal">Emprego formal UK</div></div>
       <div class="stat-card blue"><div class="label" data-i18n="stat-selfempl">Aut&#244;nomo 2024</div><div class="value">&pound;35.616</div><div class="sub">Self-employed income</div></div>
-      <div class="stat-card green"><div class="label" data-i18n="stat-total-personal">Total Pessoal 2024</div><div class="value">&pound;54.000</div><div class="sub">Declarado Form E</div></div>
+      <div class="stat-card green"><div class="label" data-i18n="stat-total-personal">Total Pessoal 2024</div><div class="value">&pound;54.000</div><div class="sub" data-i18n="sub-declared-fe">Declarado Form E</div></div>
       <div class="stat-card yellow"><div class="label" data-i18n="lbl-airbnb-label">Airbnb (mai&ndash;out 2025)</div><div class="value">&pound;~3.100</div><div class="sub">Via Barclays + Lloyds</div></div>
     </div>
     <div class="table-wrap">
@@ -250,7 +250,7 @@ footer{text-align:center;padding:28px 20px;font-size:.73rem;color:#374151;border
     <h2 data-i18n="h2-cmsl">&#127970; Concept Marketing Solutions Limited &mdash; Irlanda</h2>
     <div class="card-grid">
       <div class="stat-card blue"><div class="label" data-i18n="lbl-annual-revenue">Receita Total Anual</div><div class="value">&euro;351.701</div><div class="sub">Nov 2024 &ndash; Out 2025</div></div>
-      <div class="stat-card yellow"><div class="label" data-i18n="lbl-payroll">Folha de Pagamento</div><div class="value">&euro;8.000&ndash;12.000/m&#234;s</div><div class="sub">Funcion&#225;rios IE/IT</div></div>
+      <div class="stat-card yellow"><div class="label" data-i18n="lbl-payroll">Folha de Pagamento</div><div class="value">&euro;8.000&ndash;12.000/m&#234;s</div><div class="sub" data-i18n="sub-staff-ieit">Funcion&#225;rios IE/IT</div></div>
     </div>
     <p data-i18n="p-cmsl-desc" style="font-size:.8rem;color:#94a3b8;margin-bottom:10px">Banco: Revolut Business Main EUR &bull; Endere&ccedil;o: Dundalk, Irlanda &bull; Receita de clientes italianos via Stripe</p>
     <div class="chart-row">
@@ -264,8 +264,8 @@ footer{text-align:center;padding:28px 20px;font-size:.73rem;color:#374151;border
   <div class="card">
     <h2 data-i18n="h2-archprime">&#127970; Archprime Ltd &mdash; Reino Unido</h2>
     <div class="card-grid">
-      <div class="stat-card blue"><div class="label" data-i18n="lbl-archprime-in">Receita (ago&ndash;out 2025)</div><div class="value">&euro;70.080</div><div class="sub">Per&#237;odo parcial &mdash; apenas 3 meses</div></div>
-      <div class="stat-card blue"><div class="label" data-i18n="lbl-archprime-out">Sa&#237;das (ago&ndash;out 2025)</div><div class="value">&euro;67.422</div><div class="sub">Inclui sal&#225;rios e Barclaycard</div></div>
+      <div class="stat-card blue"><div class="label" data-i18n="lbl-archprime-in">Receita (ago&ndash;out 2025)</div><div class="value">&euro;70.080</div><div class="sub" data-i18n="sub-partial-3months">Per&#237;odo parcial &mdash; apenas 3 meses</div></div>
+      <div class="stat-card blue"><div class="label" data-i18n="lbl-archprime-out">Sa&#237;das (ago&ndash;out 2025)</div><div class="value">&euro;67.422</div><div class="sub" data-i18n="sub-incl-salaries">Inclui sal&#225;rios e Barclaycard</div></div>
       <div class="stat-card yellow"><div class="label" data-i18n="lbl-credito-euro">Sub-conta CREDITO EURO</div><div class="value">&euro;6.003 entrada</div><div class="sub">&euro;5.621 sa&#237;da</div></div>
     </div>
     <p data-i18n="p-archprime-desc" style="font-size:.8rem;color:#94a3b8;margin-bottom:10px">225 Clapham Road, London SW9 9BE &bull; Revolut Business EUR &bull; Recebe de clientes italianos E da CMSL Irlanda via Stripe</p>
@@ -296,7 +296,7 @@ footer{text-align:center;padding:28px 20px;font-size:.73rem;color:#374151;border
     <h2 data-i18n="h2-concept-ltda">&#127891; Concept Comunica&ccedil;&atilde;o e Marketing Ltda &mdash; Brasil</h2>
     <div class="card-grid">
       <div class="stat-card green"><div class="label" data-i18n="lbl-annual-revenue">Receita Total Anual</div><div class="value">R$1.203.716</div><div class="sub">Nov 2024 &ndash; Out 2025</div></div>
-      <div class="stat-card yellow"><div class="label" data-i18n="lbl-final-balance">Saldo Final (out 2025)</div><div class="value">R$291,95</div><div class="sub">Quase zerado</div></div>
+      <div class="stat-card yellow"><div class="label" data-i18n="lbl-final-balance">Saldo Final (out 2025)</div><div class="value">R$291,95</div><div class="sub" data-i18n="sub-nearly-zero">Quase zerado</div></div>
     </div>
     <p data-i18n="p-concept-ltda-desc" style="font-size:.8rem;color:#94a3b8;margin-bottom:10px">CNPJ: 51.215.384/0001-09 &bull; Banco: Nubank PJ &bull; 8+ funcion&#225;rios &bull; Folha de pagamento via Nubank Pessoal do Pablo</p>
     <h3 style="color:#94a3b8;font-size:.85rem;margin-bottom:8px" data-i18n="br-clients">Principais Clientes e Movimenta&ccedil;&otilde;es Brasil:</h3>
@@ -369,9 +369,9 @@ footer{text-align:center;padding:28px 20px;font-size:.73rem;color:#374151;border
   <div class="card">
     <h2 data-i18n="barclaycard-title">&#128179; Barclaycard Mastercard &mdash; An&#225;lise de Despesas (Jun&ndash;Out 2025)</h2>
     <div class="card-grid">
-      <div class="stat-card red"><div class="label" data-i18n="lbl-total-charged">Total Cobrado</div><div class="value">&pound;38.142</div><div class="sub">Jun &ndash; Out 2025 (5 meses)</div></div>
-      <div class="stat-card yellow"><div class="label" data-i18n="stat-business-exp">Despesas Empresariais Estimadas</div><div class="value">&pound;~18.000</div><div class="sub">Facebook Ads &pound;15.600 + outras</div></div>
-      <div class="stat-card blue"><div class="label" data-i18n="stat-personal-exp">Despesas Pessoais Estimadas</div><div class="value">&pound;~20.000</div><div class="sub">Foxtons aluguel + outras pessoais</div></div>
+      <div class="stat-card red"><div class="label" data-i18n="lbl-total-charged">Total Cobrado</div><div class="value">&pound;38.142</div><div class="sub" data-i18n="sub-barc-period">Jun &ndash; Out 2025 (5 meses)</div></div>
+      <div class="stat-card yellow"><div class="label" data-i18n="stat-business-exp">Despesas Empresariais Estimadas</div><div class="value">&pound;~18.000</div><div class="sub" data-i18n="sub-barc-business">Facebook Ads &pound;15.600 + outras</div></div>
+      <div class="stat-card blue"><div class="label" data-i18n="stat-personal-exp">Despesas Pessoais Estimadas</div><div class="value">&pound;~20.000</div><div class="sub" data-i18n="sub-barc-personal">Foxtons aluguel + outras pessoais</div></div>
     </div>
     <div class="table-wrap">
       <table>
@@ -404,11 +404,11 @@ footer{text-align:center;padding:28px 20px;font-size:.73rem;color:#374151;border
   <div class="card">
     <h2 data-i18n="luiza-income-title">&#128105; Renda da Luiza &mdash; Fontes Declaradas</h2>
     <div class="card-grid">
-      <div class="stat-card purple"><div class="label" data-i18n="lbl-hippodrome">Hippodrome Casino (PAYE)</div><div class="value">&pound;12.511</div><div class="sub">Jul 2024 &ndash; Set 2025</div></div>
+      <div class="stat-card purple"><div class="label" data-i18n="lbl-hippodrome">Hippodrome Casino (PAYE)</div><div class="value">&pound;12.511</div><div class="sub" data-i18n="sub-hippodrome-period">Jul 2024 &ndash; Set 2025</div></div>
       <div class="stat-card purple"><div class="label" data-i18n="lbl-extraman">Extraman Temps (P60 &agrave; Abr 2025)</div><div class="value">&pound;2.352</div><div class="sub">NI: SW 47 92 78 C</div></div>
-      <div class="stat-card purple"><div class="label" data-i18n="lbl-uc">Universal Credit (Ago 2025)</div><div class="value">&pound;2.108/m&#234;s</div><div class="sub">Aluguel + filho + childcare + standard</div></div>
-      <div class="stat-card green"><div class="label" data-i18n="lbl-cb">Child Benefit (HMRC)</div><div class="value">&pound;104,20/m&#234;s</div><div class="sub">Para Noah</div></div>
-      <div class="stat-card purple"><div class="label" data-i18n="lbl-magic">Magic Booking</div><div class="value">&pound;200&ndash;450/m&#234;s</div><div class="sub">Renda adicional</div></div>
+      <div class="stat-card purple"><div class="label" data-i18n="lbl-uc">Universal Credit (Ago 2025)</div><div class="value">&pound;2.108/m&#234;s</div><div class="sub" data-i18n="sub-uc-breakdown">Aluguel + filho + childcare + standard</div></div>
+      <div class="stat-card green"><div class="label" data-i18n="lbl-cb">Child Benefit (HMRC)</div><div class="value">&pound;104,20/m&#234;s</div><div class="sub" data-i18n="sub-for-noah">Para Noah</div></div>
+      <div class="stat-card purple"><div class="label" data-i18n="lbl-magic">Magic Booking</div><div class="value">&pound;200&ndash;450/m&#234;s</div><div class="sub" data-i18n="sub-extra-income">Renda adicional</div></div>
     </div>
 
     <div class="table-wrap">
@@ -443,8 +443,8 @@ footer{text-align:center;padding:28px 20px;font-size:.73rem;color:#374151;border
   <div class="card">
     <h2 data-i18n="luiza-budget-title">&#128200; Or&ccedil;amento de Despesas Declarado da Luiza</h2>
     <div class="card-grid">
-      <div class="stat-card purple"><div class="label" data-i18n="stat-current-budget">Or&ccedil;amento ATUAL/m&#234;s</div><div class="value">&pound;3.184</div><div class="sub">&pound;38.212/ano &mdash; apt studio SW16</div></div>
-      <div class="stat-card red"><div class="label" data-i18n="stat-future-budget">Or&ccedil;amento FUTURO/m&#234;s</div><div class="value">&pound;5.973</div><div class="sub">&pound;71.670/ano &mdash; apt maior (&pound;2.100 aluguel)</div></div>
+      <div class="stat-card purple"><div class="label" data-i18n="stat-current-budget">Or&ccedil;amento ATUAL/m&#234;s</div><div class="value">&pound;3.184</div><div class="sub" data-i18n="sub-luiza-current-budget">&pound;38.212/ano &mdash; apt studio SW16</div></div>
+      <div class="stat-card red"><div class="label" data-i18n="stat-future-budget">Or&ccedil;amento FUTURO/m&#234;s</div><div class="value">&pound;5.973</div><div class="sub" data-i18n="sub-luiza-future-budget">&pound;71.670/ano &mdash; apt maior (&pound;2.100 aluguel)</div></div>
     </div>
     <div class="table-wrap">
       <table>
@@ -535,8 +535,8 @@ footer{text-align:center;padding:28px 20px;font-size:.73rem;color:#374151;border
   <div class="card">
     <h2 data-i18n="luiza-assets-title">&#128200; Ativos Declarados da Luiza</h2>
     <div class="card-grid">
-      <div class="stat-card purple"><div class="label">The People's Pension</div><div class="value">&pound;218,81</div><div class="sub">Conta 8220172/PP. Empregador: Hippodrome Casino</div></div>
-      <div class="stat-card gray"><div class="label" data-i18n="stat-property">Im&#243;vel</div><div class="value">Nenhum</div><div class="sub">Aluga studio @ &pound;1.300/m&#234;s (SW16 1QE)</div></div>
+      <div class="stat-card purple"><div class="label" data-i18n="lbl-peoples-pension">The People's Pension</div><div class="value">&pound;218,81</div><div class="sub" data-i18n="sub-peoples-pension">Conta 8220172/PP. Empregador: Hippodrome Casino</div></div>
+      <div class="stat-card gray"><div class="label" data-i18n="stat-property">Im&#243;vel</div><div class="value">Nenhum</div><div class="sub" data-i18n="sub-luiza-property">Aluga studio @ &pound;1.300/m&#234;s (SW16 1QE)</div></div>
     </div>
   </div>
 </div>
@@ -546,9 +546,9 @@ footer{text-align:center;padding:28px 20px;font-size:.73rem;color:#374151;border
   <div class="card">
     <h2 data-i18n="cms-title">&#128118; Pens&#227;o Alimentar &mdash; CMS para Noah</h2>
     <div class="card-grid">
-      <div class="stat-card yellow"><div class="label" data-i18n="cms-phase1">Fase 1 &mdash; Informal</div><div class="value">&pound;500/m&#234;s</div><div class="sub">Jul 2024 &ndash; Dez 2024 (6 meses = &pound;3.000)</div></div>
-      <div class="stat-card green"><div class="label" data-i18n="cms-phase2">Fase 2 &mdash; CMS Oficial</div><div class="value">&pound;131,40/m&#234;s</div><div class="sub">Jan 2025 &ndash; Mar 2025 (3 meses = &pound;394,20)</div></div>
-      <div class="stat-card green"><div class="label" data-i18n="cms-phase3">Fase 3 &mdash; CMS Revisado</div><div class="value">&pound;183,72/m&#234;s</div><div class="sub">Abr 2025+ (7 meses = &pound;1.286,04)</div></div>
+      <div class="stat-card yellow"><div class="label" data-i18n="cms-phase1">Fase 1 &mdash; Informal</div><div class="value">&pound;500/m&#234;s</div><div class="sub" data-i18n="sub-cms-phase1">Jul 2024 &ndash; Dez 2024 (6 meses = &pound;3.000)</div></div>
+      <div class="stat-card green"><div class="label" data-i18n="cms-phase2">Fase 2 &mdash; CMS Oficial</div><div class="value">&pound;131,40/m&#234;s</div><div class="sub" data-i18n="sub-cms-phase2">Jan 2025 &ndash; Mar 2025 (3 meses = &pound;394,20)</div></div>
+      <div class="stat-card green"><div class="label" data-i18n="cms-phase3">Fase 3 &mdash; CMS Revisado</div><div class="value">&pound;183,72/m&#234;s</div><div class="sub" data-i18n="sub-cms-phase3">Abr 2025+ (7 meses = &pound;1.286,04)</div></div>
     </div>
     <div class="chart-row">
       <div class="chart-box">
@@ -735,6 +735,187 @@ function checkPw(){
   }
 }
 
+
+// ===== RAW TABLE CONTENT TRANSLATIONS =====
+// Handles simple text content in td/span elements not covered by data-i18n
+var rawTrans = {
+  en: {
+    // Countries
+    'Irlanda': 'Ireland',
+    'Brasil': 'Brazil',
+    'Reino Unido': 'United Kingdom',
+    'It\u00e1lia (Mil\u00e3o)': 'Italy (Milan)',
+    'It\u00e1lia (Floren\u00e7a)': 'Italy (Florence)',
+    // Corporate row content
+    '\u20ac70.080 (ago\u2013out 2025 parcial)': '\u20ac70,080 (Aug\u2013Oct 2025 partial)',
+    // Status tags
+    'Ativa': 'Active',
+    'Inativa': 'Inactive',
+    'Fechada': 'Closed',
+    'Vazia': 'Empty',
+    'Quase inativa': 'Nearly inactive',
+    'Dormida': 'Dormant',
+    'ABERTA \u2014 n\u00e3o declarada': 'OPEN \u2014 undisclosed',
+    'ABERTA \u2014 empr\u00e9stimo pendente': 'OPEN \u2014 loan outstanding',
+    'Pessoal': 'Personal',
+    'Pessoal PF': 'Personal (Individual)',
+    'PJ Concept LTDA': 'Business Concept LTDA',
+    'Cart\u00e3o misto': 'Mixed card',
+    'Empresarial': 'Business',
+    'Misto': 'Mixed',
+    'Acordo informal': 'Informal agreement',
+    'CMS oficial': 'Official CMS',
+    'CMS oficial revisado': 'Official CMS revised',
+    // Pablo Income table
+    'PAYE (Emprego)': 'PAYE (Employment)',
+    'Aut\u00f4nomo': 'Self-employed',
+    'Declarado Form E': 'Declared Form E',
+    'Airbnb (via Barclays)': 'Airbnb (via Barclays)',
+    '\u00a3152\u2013\u00a31.144/m\u00eas': '\u00a3152\u2013\u00a31,144/month',
+    'Mai\u2013Out 2025': 'May\u2013Oct 2025',
+    'Via conta corrente Barclays': 'Via Barclays current account',
+    'Airbnb (via Lloyds/Citibank)': 'Airbnb (via Lloyds/Citibank)',
+    'Set\u2013Out 2025': 'Sep\u2013Oct 2025',
+    'Subarrendamento (Barclays)': 'Sub-letting (Barclays)',
+    '\u00a31.100/m\u00eas': '\u00a31,100/month',
+    'Set\u2013Dez 2024': 'Sep\u2013Dec 2024',
+    '2 subarrendatários (\u00a3900+\u00a3200)': '2 sub-tenants (\u00a3900+\u00a3200)',
+    'Subarrendamento (Maria Staveski)': 'Sub-letting (Maria Staveski)',
+    '\u00a3443/m\u00eas': '\u00a3443/month',
+    'Jan\u2013Abr 2025': 'Jan\u2013Apr 2025',
+    'Pago via banco': 'Paid via bank',
+    'Archprime Ltd \u2192 Pablo (sal\u00e1rio/pro-labore)': 'Archprime Ltd \u2192 Pablo (salary)',
+    '\u20ac3.500\u2013\u20ac3.656/m\u00eas': '\u20ac3,500\u2013\u20ac3,656/month',
+    'Ago\u2013Out 2025': 'Aug\u2013Oct 2025',
+    'Transfer\u00eancia direta da empresa UK': 'Direct transfer from UK company',
+    // Pablo Empresas - staff
+    'Staff / Gest\u00e3o cart\u00e3o Amex': 'Staff / Amex card management',
+    // Brazil clients
+    'Principal cliente final do per\u00edodo': 'Main client for the period',
+    '\u26a0 Parceiro n\u00e3o declarado \u2014 trocas mensais elevadas': '\u26a0 Undisclosed partner \u2014 high monthly transactions',
+    'R$80.000+/m\u00eas': 'R$80,000+/month',
+    'Recorrente': 'Recurring',
+    'Jul 2025': 'Jul 2025',
+    '\u26a0 Finalidade desconhecida \u2014 valor elevado \u00fanico': '\u26a0 Unknown purpose \u2014 single large payment',
+    'Cliente regular': 'Regular client',
+    'Set 2025': 'Sep 2025',
+    'Pagamento pontual': 'One-off payment',
+    'Mai 2025': 'May 2025',
+    'Pagamento menor no in\u00edcio do per\u00edodo': 'Smaller payment at start of period',
+    // Pablo UK accounts table
+    'Out 2024\u2013Out 2025': 'Oct 2024\u2013Oct 2025',
+    'Subarrend. + Archprime pagamentos': 'Sub-let income + Archprime payments',
+    'CMS + despesas pessoais': 'CMS + personal expenses',
+    'Saldo final: \u00a3794,65': 'Closing balance: \u00a3794.65',
+    'Airbnb via Citibank IRE': 'Airbnb via Citibank Ireland',
+    'Despesas pessoais': 'Personal expenses',
+    'Airbnb \u00a3686,84 Out 2025': 'Airbnb \u00a3686.84 Oct 2025',
+    'Uso m\u00ednimo': 'Minimal use',
+    'Saldo: \u00a318,01. Pot "Mariana Martini" zerado Mai 2025': 'Balance: \u00a318.01. Pot "Mariana Martini" cleared May 2025',
+    'Pessoal (Mil\u00e3o)': 'Personal (Milan)',
+    'Nov 2024\u2013Out 2025': 'Nov 2024\u2013Oct 2025',
+    'Endere\u00e7o: Via San Faustino 6, 20134 Milano. Conversor EUR\u2192GBP': 'Address: Via San Faustino 6, 20134 Milano. EUR\u2192GBP converter',
+    'Jun\u2013Out 2025': 'Jun\u2013Oct 2025',
+    '\u00a34.321+ (Archprime paga)': '\u00a34,321+ (paid by Archprime)',
+    'Mistura despesas pessoais e empresariais. Devolveu 2x.': 'Mixes personal & business expenses. Returned twice.',
+    // Pablo Brazil accounts
+    'R$49\u201371k entrada/m\u00eas': 'R$49\u201371k inflow/month',
+    'Canal de passagem: recebe da CMSL Irlanda via Remessa Online e transfere para Concept LTDA (folha). Set 2025: R$45k empr\u00e9stimo \u2192 Concept LTDA': 'Transit account: receives from CMSL Ireland via Remessa Online and transfers to Concept LTDA (payroll). Sep 2025: R$45k loan \u2192 Concept LTDA',
+    'R$1.203.716 anual': 'R$1,203,716 annual',
+    'Conta da empresa brasileira. Saldo final Out 2025: R$291,95': 'Brazilian company account. Closing balance Oct 2025: R$291.95',
+    // Pablo business accounts table
+    'CMSL (Irlanda)': 'CMSL (Ireland)',
+    '\u20ac351.701 entrada anual': '\u20ac351,701 annual inflow',
+    '\u20ac70.080 entrada (ago\u2013out 2025)': '\u20ac70,080 inflow (Aug\u2013Oct 2025)',
+    'Paga Barclaycard via convers\u00e3o EUR\u2192GBP': 'Pays Barclaycard via EUR\u2192GBP conversion',
+    '\u20ac6.003 entrada / \u20ac5.621 sa\u00edda': '\u20ac6,003 inflow / \u20ac5,621 outflow',
+    '$5.400 movimenta\u00e7\u00e3o': '$5,400 activity',
+    // Barclaycard table
+    'Publicidade digital \u2014 custo da empresa': 'Digital advertising \u2014 business cost',
+    'Aluguel do im\u00f3vel onde vive': 'Rent for property where he lives',
+    'Viagens It\u00e1lia / voos': 'Italy travel / flights',
+    'Viagens de neg\u00f3cios e pessoais': 'Business and personal travel',
+    'Restaurantes / supermercados': 'Restaurants / supermarkets',
+    'Gastos do dia a dia': 'Day-to-day expenses',
+    'Outros (servi\u00e7os, compras)': 'Others (services, purchases)',
+    'Diversas categorias': 'Various categories',
+    // Luiza income table
+    'Sal\u00e1rio PAYE via Lloyds. Encerrou ~Set 2025': 'PAYE salary via Lloyds. Ended ~Sep 2025',
+    'P60: \u00a32.352,16 (at\u00e9 Abr 2025)': 'P60: \u00a32,352.16 (to Apr 2025)',
+    'Aluguel \u00a31.300 + filho \u00a3339 + childcare \u00a369,36 + standard \u00a3400,14. Poupan\u00e7a declarada ao UC: \u00a3455,93': 'Rent \u00a31,300 + child \u00a3339 + childcare \u00a369.36 + standard \u00a3400.14. Savings declared to UC: \u00a3455.93',
+    'Para Noah': 'For Noah',
+    // Luiza budget categories
+    'Aluguel': 'Rent',
+    'G\u00e1s / Eletricidade / \u00c1gua': 'Gas / Electricity / Water',
+    'D\u00e9bitos / m\u00f3veis': 'Debts / furniture',
+    'Alimenta\u00e7\u00e3o': 'Food',
+    'Transporte': 'Transport',
+    'Childcare / escola Noah': 'Childcare / Noah school',
+    'Roupas / sa\u00eddas / higiene': 'Clothing / outings / toiletries',
+    'Outros (viagens, presentes, etc.)': 'Others (travel, gifts, etc.)',
+    'TOTAL': 'TOTAL',
+    '\u00a32.100 (apt maior)': '\u00a32,100 (larger flat)',
+    // Luiza UK accounts
+    'Sal\u00e1rio Hippodrome \u00a312.511; UC \u00a3750\u2013\u00a32.200+/m\u00eas; CMS do Pablo; Extraman Temps; Magic Booking': 'Hippodrome salary \u00a312,511; UC \u00a3750\u2013\u00a32,200+/month; CMS from Pablo; Extraman Temps; Magic Booking',
+    'Endere\u00e7o Mil\u00e3o': 'Milan address',
+    '<b>\u00a36.485 SWIFT enviados para CLS LTD FL CLIENT</b> (conta cliente de advogados)': '<b>\u00a36,485 SWIFT sent to CLS LTD FL CLIENT</b> (solicitors client account)',
+    'Saldo \u20ac0': 'Balance \u20ac0',
+    'Todos zeros \u2014 encerrada': 'All zeros \u2014 closed',
+    // Luiza Brazil accounts
+    'Saldo: R$0,67 \u2014 dormida': 'Balance: R$0.67 \u2014 dormant',
+    'R$0,00 todos os meses Jan\u2013Dez 2025': 'R$0.00 all months Jan\u2013Dec 2025',
+    'Dormida Jan\u2013Jul 2025': 'Dormant Jan\u2013Jul 2025',
+    // Luiza undisclosed accounts
+    'Confirmada no relat\u00f3rio CCS do Banco Central': 'Confirmed in Central Bank CCS report',
+    'Filial Fattore Riccardo \u2014 empr\u00e9stimo "X MERITO" n\u00e3o pago mantendo conta aberta. Luiza enviou email Jul 2025 dizendo que precisa declarar no div\u00f3rcio.': 'Branch Fattore Riccardo \u2014 unpaid "X MERITO" loan keeping account open. Luiza sent email Jul 2025 saying she needs to declare it in the divorce.',
+    'Aberta 2018. CF italiano: DCMLZU93M56Z602G. Luiza alega que Pablo geria.': 'Opened 2018. Italian CF: DCMLZU93M56Z602G. Luiza claims Pablo managed it.',
+    // Luiza liabilities
+    'Custas jur\u00eddicas (Child Arrangements)': 'Legal costs (Child Arrangements)',
+    'M\u00faltiplos pagamentos Nov 2024\u2013Dez 2025. Reembolso a partir Fev 2027 @ \u00a3500/m\u00eas. Sem juros. Assinado 20/01/2026': 'Multiple payments Nov 2024\u2013Dec 2025. Repayment from Feb 2027 @ \u00a3500/month. No interest. Signed 20/01/2026',
+    'Custas jur\u00eddicas do div\u00f3rcio': 'Divorce legal costs',
+    '96 parcelas \u00d7 R$298,08 @ 1,85%/m\u00eas. In\u00edcio 21/10/2025. Reembolso a partir Jan 2027. Assinado 20/01/2026': '96 instalments \u00d7 R$298.08 @ 1.85%/month. Start 21/10/2025. Repayment from Jan 2027. Signed 20/01/2026',
+    'Pagamento de curso': 'Course payment',
+    '10 parcelas restantes \u00d7 R$587,50. In\u00edcio 22/01/2026': '10 remaining instalments \u00d7 R$587.50. Start 22/01/2026',
+    'D\u00e9bito de energia': 'Energy debt',
+    'Plan ID: 9077545. \u00a320,03/m\u00eas, 58 pagamentos': 'Plan ID: 9077545. \u00a320.03/month, 58 payments',
+    'Impostos n\u00e3o pagos (MEI)': 'Unpaid taxes (MEI)',
+    'IRPJ R$9.104 + CSLL R$5.462 + COFINS R$2.500+ + PIS R$1.200+ + INSS ~R$4.800+. Renegociado SISPAR (extrajudicial)': 'IRPJ R$9,104 + CSLL R$5,462 + COFINS R$2,500+ + PIS R$1,200+ + INSS ~R$4,800+. Renegotiated SISPAR (out-of-court)',
+    'Aquisi\u00e7\u00e3o de im\u00f3vel': 'Property acquisition',
+    '84 parcelas totais \u00d7 R$585/m\u00eas (7 anos). 16 pagas at\u00e9 Jul 2025. ~68 restantes = R$39.780. Confirmado em conversa WhatsApp com "Eder"': '84 total instalments \u00d7 R$585/month (7 years). 16 paid by Jul 2025. ~68 remaining = R$39,780. Confirmed via WhatsApp with "Eder"',
+    // CMS table
+    'Jul \u2013 Dez 2024': 'Jul \u2013 Dec 2024',
+    '6 meses': '6 months',
+    'Jan \u2013 Mar 2025': 'Jan \u2013 Mar 2025',
+    '3 meses': '3 months',
+    'Abr \u2013 Out 2025': 'Apr \u2013 Oct 2025',
+    '7 meses': '7 months',
+    'TOTAL (Jul 2024 \u2013 Out 2025)': 'TOTAL (Jul 2024 \u2013 Oct 2025)',
+    '16 meses': '16 months',
+    // CMS stat card sub (in th/td Tipo)
+    'Acordo informal': 'Informal agreement',
+    'CMS oficial': 'Official CMS',
+    'CMS oficial revisado': 'Official CMS revised',
+  }
+};
+
+function applyRawTranslations(lang) {
+  var map = (lang === 'en') ? rawTrans.en : null;
+  if (!map) {
+    // Going back to PT: reverse the map
+    map = {};
+    for (var pt in rawTrans.en) { map[rawTrans.en[pt]] = pt; }
+  }
+  var selectors = 'td, .sub, .flow-entity, .flow-amount, .tag, .stat-card .label';
+  document.querySelectorAll(selectors).forEach(function(el) {
+    if (el.hasAttribute('data-i18n')) return; // skip if already handled
+    var inner = el.innerHTML;
+    var trimmed = inner.trim();
+    if (map[trimmed] !== undefined) {
+      el.innerHTML = map[trimmed];
+    }
+  });
+}
+
 // ===== LANGUAGE TOGGLE =====
 var currentLang = 'pt';
 var T = {
@@ -853,6 +1034,46 @@ var T = {
     'alert8-body':'WhatsApp conversation with "Eder" confirms that Luiza is buying a property in 84 monthly instalments of R$585 (7 years). By Jul 2025 she had paid 16 instalments. Estimated outstanding balance: R$39,780. It is unclear whether this asset has been properly declared in the divorce proceedings.',
     'alert9-body':'Luiza declared to Universal Credit that she has only &pound;455.93 in savings. However, she has 5 undisclosed accounts (Brazil and Italy) with unknown balances. If she has more than &pound;6,000 in savings, her UC entitlement would be reduced; above &pound;16,000 she would lose entitlement entirely.',
     'alert10-body':'Pablo&#39;s Revolut Personal GBP account (Sort: 040075, Acc: 46650881) is registered with an address at Via San Faustino 6, 20134 Milano, Italy. It transacted &pound;47,918 (in) and &pound;47,876 (out) between Nov 2024 and Oct 2025. It functions as a EUR&rarr;GBP converter for personal spending in the UK.',
+
+    // ── Flow box
+    'fl-ent-it-clients':'Italian Clients',
+    'fl-ent-pablo-pers':'Pablo Personally',
+    'fl-ent-cmsl-irl':'CMSL Ireland',
+    'fl-ent-concept-payroll':'Concept LTDA Brazil (payroll)',
+    'fl-ent-airbnb-chain':'Airbnb &#8594; Citibank Ireland &#8594; Lloyds UK',
+    'fl-ent-revolut-converter':'Revolut Personal GBP (EUR&#8594;GBP converter)',
+    'fl-amt-archprime':'&euro;70,080 (Aug&ndash;Oct 2025)',
+    'fl-amt-cmsl-annual':'&euro;351,701 annual',
+    'fl-amt-revolut-gbp':'&pound;47,918 inflow',
+    'fl-amt-barclaycard':'&pound;38,142 (Jun&ndash;Oct 2025)',
+    'fl-amt-pablo-salary':'&euro;3,500&ndash;&euro;3,656/month',
+    'fl-amt-airbnb-monthly':'&pound;152&ndash;&pound;1,144/month',
+    // ── Sub texts
+    'sub-resumo-pablo-personal':'PAYE &pound;18,384 + Self-employed &pound;35,616',
+    'sub-luiza-liab':'Loan Mauro &pound;21,394 + British Gas &pound;1,162',
+    'sub-cms-total-period':'Jul 2024 &ndash; Oct 2025 (Noah)',
+    'sub-paye-formal':'Formal UK employment',
+    'sub-declared-fe':'Declared Form E',
+    'sub-staff-ieit':'Staff IE/IT',
+    'sub-partial-3months':'Partial period &mdash; only 3 months',
+    'sub-incl-salaries':'Includes salaries and Barclaycard',
+    'sub-nearly-zero':'Nearly zero',
+    'sub-barc-period':'Jun &ndash; Oct 2025 (5 months)',
+    'sub-barc-business':'Facebook Ads &pound;15,600 + other',
+    'sub-barc-personal':'Foxtons rent + other personal',
+    'sub-hippodrome-period':'Jul 2024 &ndash; Sep 2025',
+    'sub-uc-breakdown':'Rent &pound;1,300 + child &pound;339 + childcare &pound;69.36 + standard &pound;400.14',
+    'sub-for-noah':'For Noah',
+    'sub-extra-income':'Additional income',
+    'sub-luiza-current-budget':'&pound;38,212/year &mdash; studio flat SW16',
+    'sub-luiza-future-budget':'&pound;71,670/year &mdash; larger flat (&pound;2,100 rent)',
+    'sub-peoples-pension':'Account 8220172/PP. Employer: Hippodrome Casino',
+    'sub-luiza-property':'Rents studio @ &pound;1,300/month (SW16 1QE)',
+    'sub-cms-phase1':'Jul 2024 &ndash; Dec 2024 (6 months = &pound;3,000)',
+    'sub-cms-phase2':'Jan 2025 &ndash; Mar 2025 (3 months = &pound;394.20)',
+    'sub-cms-phase3':'Apr 2025+ (7 months = &pound;1,286.04)',
+    // ── People&#39;s Pension label
+    'lbl-peoples-pension':'The People&#39;s Pension',
     'footer-text':'Confidential &mdash; Legal Privilege | Financial Disclosure Analysis | Family Court &mdash; England &amp; Wales | Generated 18 February 2026'
   },
   pt: {
@@ -970,7 +1191,47 @@ var T = {
     'alert8-body':'Conversa WhatsApp com "Eder" confirma que Luiza est&#225; comprando um im&#243;vel em 84 parcelas de R$585/m&#234;s (7 anos). Em Jul 2025 havia pago 16 parcelas. Saldo devedor estimado: R$39.780. N&#227;o est&#225; claro se este ativo foi devidamente declarado no processo de div&#243;rcio.',
     'alert9-body':'Luiza declarou ao Universal Credit ter apenas &pound;455,93 em poupan&ccedil;a. Contudo, tem 5 contas n&#227;o declaradas (Brasil e It&#225;lia) com saldos desconhecidos. Se tiver mais de &pound;6.000, o UC seria reduzido; acima de &pound;16.000, perderia o direito ao benef&#237;cio.',
     'alert10-body':'A conta Revolut Personal GBP de Pablo (Sort: 040075, Acc: 46650881) est&#225; registrada com endere&ccedil;o em Via San Faustino 6, 20134 Milano, It&#225;lia. Movimentou &pound;47.918 (entrada) e &pound;47.876 (sa&#237;da) entre Nov 2024 e Out 2025. Funciona como conversor EUR&#8594;GBP para gastos pessoais no Reino Unido.',
-    'footer-text':'Confidencial &mdash; Legal Privilege | An&#225;lise de Divulga&#231;&#227;o Financeira | Family Court &mdash; England &amp; Wales | Gerado em 18 de Fevereiro de 2026'
+    
+    // ── Flow box
+    'fl-ent-it-clients':'Clientes Italianos',
+    'fl-ent-pablo-pers':'Pablo Pessoalmente',
+    'fl-ent-cmsl-irl':'CMSL Irlanda',
+    'fl-ent-concept-payroll':'Concept LTDA Brasil (folha)',
+    'fl-ent-airbnb-chain':'Citibank Irlanda &#8594; Lloyds UK',
+    'fl-ent-revolut-converter':'Revolut Personal GBP (conversor EUR&#8594;GBP)',
+    'fl-amt-archprime':'&euro;70.080 (ago&ndash;out 2025)',
+    'fl-amt-cmsl-annual':'&euro;351.701 anual',
+    'fl-amt-revolut-gbp':'&pound;47.918 entrada',
+    'fl-amt-barclaycard':'&pound;38.142 (jun&ndash;out 2025)',
+    'fl-amt-pablo-salary':'&euro;3.500&ndash;&euro;3.656/m&ecirc;s',
+    'fl-amt-airbnb-monthly':'&pound;152&ndash;&pound;1.144/m&ecirc;s',
+    // ── Sub texts
+    'sub-resumo-pablo-personal':'PAYE &pound;18.384 + Aut&ocirc;nomo &pound;35.616',
+    'sub-luiza-liab':'Empr&eacute;stimo Mauro &pound;21.394 + British Gas &pound;1.162',
+    'sub-cms-total-period':'Jul 2024 &ndash; Out 2025 (Noah)',
+    'sub-paye-formal':'Emprego formal UK',
+    'sub-declared-fe':'Declarado Form E',
+    'sub-staff-ieit':'Funcion&#225;rios IE/IT',
+    'sub-partial-3months':'Per&#237;odo parcial &mdash; apenas 3 meses',
+    'sub-incl-salaries':'Inclui sal&#225;rios e Barclaycard',
+    'sub-nearly-zero':'Quase zerado',
+    'sub-barc-period':'Jun &ndash; Out 2025 (5 meses)',
+    'sub-barc-business':'Facebook Ads &pound;15.600 + outras',
+    'sub-barc-personal':'Foxtons aluguel + outras pessoais',
+    'sub-hippodrome-period':'Jul 2024 &ndash; Set 2025',
+    'sub-uc-breakdown':'Aluguel + filho + childcare + standard',
+    'sub-for-noah':'Para Noah',
+    'sub-extra-income':'Renda adicional',
+    'sub-luiza-current-budget':'&pound;38.212/ano &mdash; apt studio SW16',
+    'sub-luiza-future-budget':'&pound;71.670/ano &mdash; apt maior (&pound;2.100 aluguel)',
+    'sub-peoples-pension':'Conta 8220172/PP. Empregador: Hippodrome Casino',
+    'sub-luiza-property':'Aluga studio @ &pound;1.300/m&ecirc;s (SW16 1QE)',
+    'sub-cms-phase1':'Jul 2024 &ndash; Dez 2024 (6 meses = &pound;3.000)',
+    'sub-cms-phase2':'Jan 2025 &ndash; Mar 2025 (3 meses = &pound;394,20)',
+    'sub-cms-phase3':'Abr 2025+ (7 meses = &pound;1.286,04)',
+    // ── People&#39;s Pension label
+    'lbl-peoples-pension':'The People&#39;s Pension',
+        'footer-text':'Confidencial &mdash; Legal Privilege | An&#225;lise de Divulga&#231;&#227;o Financeira | Family Court &mdash; England &amp; Wales | Gerado em 18 de Fevereiro de 2026'
   }
 };
 
@@ -982,6 +1243,7 @@ function toggleLang(){
   });
   document.getElementById('lang-btn').innerHTML = (currentLang==='pt') ? '&#127760; EN' : '&#127760; PT';
   document.documentElement.lang = (currentLang==='pt') ? 'pt-BR' : 'en';
+  applyRawTranslations(currentLang);
 }
 
 // ===== CHARTS =====
